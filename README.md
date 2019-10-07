@@ -16,6 +16,8 @@ Searching was done by the "starts with" field lookup in Django.
 
 Case-insensitive searching could be done by replacing this field lookup by "istarts with" in a production environment, depending on design choices.  
 
+The "gene_suggestenv" was used during development but is not needed for testing this application.
+
 # Requirements:
 
 Python 3.6.X
