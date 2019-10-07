@@ -31,7 +31,7 @@ Python 3.6.X
 For installing other requirements.
 
 # Usage:
-Please start up the server using:
+Please start the Django server using:
 
 "python3 manage.py runserver"
 
@@ -43,7 +43,7 @@ GET parameters:
 
 * query - the partial query typed by the user, e.g. `brc` (REQUIRED)
 * species - the name of the target species, e.g. `homo_sapiens`(OPTIONAL)
-* limit - the maximum number of suggestions to return`(OPTIONAL)
+* limit - the maximum number of suggestions to return (OPTIONAL)
 
 Examples:
 
