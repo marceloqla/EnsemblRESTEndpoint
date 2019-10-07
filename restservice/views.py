@@ -38,7 +38,7 @@ class SuggestionList(views.APIView):
         
         if querylimit:
             #results = results[:int(querylimit)]
-            resultslist = resultslist[:int(querylimit)]
+            resultslist = sorted(list(resultslist))[:int(querylimit)]
 
         # Serialize and return objects:
         # resultsdata = GeneAutocompleteSerializer(results, many=True).data 
