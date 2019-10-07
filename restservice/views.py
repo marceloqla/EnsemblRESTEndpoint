@@ -22,6 +22,7 @@ class SuggestionList(views.APIView):
         queryformat = self.request.query_params.get('format', None)
         if not query:
             raise 
+        query = query.upper()
         results = GeneAutocomplete.objects.filter(display_label__startswith=query)
         if queryspecies:
             results = results.filter(species=queryspecies)
